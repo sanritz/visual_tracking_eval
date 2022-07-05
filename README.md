@@ -3,7 +3,7 @@ This is evaluation metrics for visual tracking benchmark.
 ## AO
 Average overlap is percentage of IoU (Intersection over Union)
 $$ AO = 100 \times  \frac {| S_1 \cap S_2 |} {| S_1 \cup S_2 |} $$
-where $ S_1 $ represents the area of predict object and $ S_2 $ represents the area of ground truth object 
+where $S_1$ represents the area of predict object and $S_2$ represents the area of ground truth object 
 
 ## AUC
 Stand for area under curve, which is the average of the success rates corresponding to the sampled overlap thresholds.The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$.
