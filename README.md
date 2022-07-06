@@ -21,3 +21,16 @@ where $BB^{gt}$ is ground truth bounding boxes and $BB^{tr} $ is the ones genera
 
 The success S is measured as the IoU, by testing whether $S$ is larger than a certain threshold $t_o$ (e.g., $t_o=0.5$).
 $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$
+
+## Reference
+- GOT-10k: A large high-diversity benchmark for generic object tracking in the wild, 2019, page 8, 4.2 Evaluation methodology [[paper](https://arxiv.org/pdf/1810.11981.pdf)]
+- TrackingNet: A large-scale dataset and benchmark for object tracking in the wild, 2018, page 8, 3.4 Evaluation [[paper](https://arxiv.org/pdf/1803.10794.pdf)]
+- LaSOT: A high-quality benchmark for large-scale single object tracking, 2019, page 5, 4.1 Evaluation metric [[paper](https://arxiv.org/pdf/1809.07845v2.pdf)] 
+- Object tracking benchmark, 2015, page 1839, 5. Evaluation methodology [[paper](https://faculty.ucmerced.edu/mhyang/papers/pami15_tracking_benchmark.pdf)]
+- Visual object tracking performance measures revisited, 2016, page 3, 2. Performance measures [[paper](https://arxiv.org/pdf/1502.05803.pdf)]
+- K-Means vs. Fuzzy C-Means for segmentation of orchid flowers, 2016, page 4, 3. Result and evaluation [[paper](https://www.researchgate.net/publication/311409493_K-Means_vs_Fuzzy_C-Means_for_Segmentation_of_Orchid_Flowers)]
+- Robust visual tracking with reliable object information and Kalman filter, 2021, page 10, 4. Experiments [[paper](https://www.researchgate.net/publication/348859011_Robust_Visual_Tracking_with_Reliable_Object_Information_and_Kalman_Filter)]
+- Online Object Tracking: A Benchmark, page 3, 4. Evaluation Methodology [[paper](https://faculty.ucmerced.edu/mhyang/papers/cvpr13_benchmark.pdf)]
+- Intersection over Union (IoU) for object detection [[link](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)]
+- Understanding AUC-ROC Curve [[link](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)]
+- Visual Object Tracking on GOT-10k dataset [[link](https://paperswithcode.com/sota/visual-object-tracking-on-got-10k)]
