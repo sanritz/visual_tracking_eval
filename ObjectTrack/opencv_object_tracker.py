@@ -44,7 +44,7 @@ if __name__ == '__main__':
     bbox = (160,83,56,65)
     # Initialize tracker with first frame and bounding box
     ok = tracker.init(images[0], bbox)
-    
+    tracking_rec = []
     for i in range(1, len(images)):
         # Update tracker
         print('Start traking ... frame: {}'.format(i))
@@ -56,6 +56,7 @@ if __name__ == '__main__':
             p1 = (int(bbox[0]), int(bbox[1]))
             p2 = (int(bbox[0] + bbox[2]), int(bbox[1] + bbox[3]))
             cv2.rectangle(images[i], p1, p2, (255,0,0), 2, 1)
+            tracking_rec.append(bbox)
         else:
             # Tracking failure
             cv2.putText(images[i], "Tracking failure detected", (100,80), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0,0,255), 2)
@@ -69,5 +70,10 @@ if __name__ == '__main__':
         # Exit if ESC pressed
         k = cv2.waitKey(1) & 0xff
         if k == 27 : break
-
+    print('Write file ...')
+    with open('tracking_rect.txt', 'w') as f:
+        for track in tracking_rec:
+            f.write(str(track[0]) + ',' + str(track[1]) + ',' + str(track[2]) + ',' + str(track[3]))
+            f.write('\n')
+    print('Write Done')
         
