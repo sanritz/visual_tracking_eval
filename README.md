@@ -23,6 +23,14 @@ The success S is measured as the IoU, by testing whether $S$ is larger than a ce
 $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$ 
 *[2] - 3.4 Evaluation section
 
+# Experiment
+```bash
+python -m venv venv
+pip install numpy pandas opencv-python tqdm
+cd ObjectTrack
+python metric.py
+```
+
 ## Reference
 [1]: GOT-10k: A large high-diversity benchmark for generic object tracking in the wild [[paper](https://arxiv.org/pdf/1810.11981.pdf)] \
 [2]: TrackingNet: A large-scale dataset and benchmark for object tracking in the wild [[paper](https://arxiv.org/pdf/1803.10794.pdf)] \
