@@ -58,9 +58,11 @@ def calc_curves(ious, center_errors, norm_center_errors):
     center_errors = np.asarray(center_errors, float)[:, np.newaxis]
     norm_center_errors = np.asarray(norm_center_errors, float)[:, np.newaxis]
 
-    thr_iou = np.linspace(0, 1, 21)[np.newaxis, :]
+    n = 113 # number of frames
+    thr_iou = np.linspace(0, 1, n)[np.newaxis, :]
     thr_ce = np.arange(0, 51)[np.newaxis, :]
     thr_nce = np.linspace(0, 0.5, 51)[np.newaxis, :]
+    
     bin_iou = np.greater(ious, thr_iou)
     bin_ce = np.less_equal(center_errors, thr_ce)
     bin_nce = np.less_equal(norm_center_errors, thr_nce)
@@ -68,7 +70,7 @@ def calc_curves(ious, center_errors, norm_center_errors):
     succ_curve = np.mean(bin_iou, axis=0)
     prec_curve = np.mean(bin_ce, axis=0)
     norm_prec_curve = np.mean(bin_nce, axis=0)
-    
+
     return succ_curve, prec_curve, norm_prec_curve
 
 def main():
