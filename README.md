@@ -23,8 +23,8 @@ The success S is measured as the IoU, by testing whether $S$ is larger than a ce
 $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$ 
 *[2] - 3.4 Evaluation section
 
-# Experiment
-```bash
+# Execute
+```
 python -m venv venv
 pip install numpy pandas opencv-python tqdm
 cd ObjectTrack
