@@ -2,7 +2,9 @@
 This is evaluation metrics for visual tracking benchmark.
 ## AO
 Average overlap is percentage of IoU (Intersection over Union)
+
 $$ AO = 100 \times  \frac {| S_1 \cap S_2 |} {| S_1 \cup S_2 |} $$
+
 where $S_1$ represents the area of predict object and $S_2$ represents the area of ground truth object \
 *[6] - 3. Result and evaluation section
 ## AUC
