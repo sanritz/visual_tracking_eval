@@ -50,7 +50,7 @@ From binary classification, the MaxGM employs the true positive rath (TPR) and t
 ```
 python -m venv venv
 pip install numpy pandas opencv-python tqdm
-cd ObjectTrack
+source venv/bin/activate
 python metric.py
 ```
 
