@@ -32,20 +32,6 @@ $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$
 
 *[2] - 3.4 Evaluation section\
 [ref. code](https://github.com/SilvioGiancola/TrackingNet-devkit)
-## Long-term tracking measures
-Tracking measures for long-term trackers depend on being a target in the scene and prediction confidence to be higher than a classification threshold for each frame 
-
-**Precision (Pr)** \
-the precision is calculated by the intersection over union (IoU) between the ground-truth and predicted target, normalized by the number of frames with existing predictions. The integration of these scores over all precision thresholds provides the overall traking precision.
-
-**Recall** \
-Similar to the precision, it calculates the IoU between the ground-truth and predicted target, which is normalized by the number of frames with no absent targets. The overall tracking recall is achieved by integrating the scores over all recall thresholds.
-
-**F-score** \
-It compromises the precision and recall scores by calculating $F = \frac {2Pr*Re} {Pr+Re}$ to rank the trackers according to their maximum values over all thresholds.
-
-**Maximum Geometric Mean (MaxGM)** \
-From binary classification, the MaxGM employs the true positive rath (TPR) and true negative rate (TNR) for evaluation of trackers. While the TPR reports the fraction of correctly located targets, the TNR presents the fraction of correctly reported absent targets. As a single metric, the geometric mean is defined as $GM = \sqrt {TPR*TNR}$ but it will be zero for the trackers that cannot predict absent targets. Hence, $MaxGM = max_{0\le p \le1} \sqrt {\lbrace (1-p)*TPR \rbrace \lbrace (1-p)*TNR+p \rbrace}$ provides a more informative comparison in terms of various probabilistic threshold $p$.
 
 # Execute
 ```
