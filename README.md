@@ -6,7 +6,8 @@ Average overlap is percentage of IoU (Intersection over Union)
 $$ AO = 100 \times  \frac {| S_1 \cap S_2 |} {| S_1 \cup S_2 |} $$
 
 where $S_1$ represents the area of predict object and $S_2$ represents the area of ground truth object \
-*[6] - 3. Result and evaluation section
+*[6] - 3. Result and evaluation section\
+[ref. code](https://github.com/got-10k/toolkit)
 ## AUC
 Stand for area under curve, which is the average of the success rates corresponding to the sampled overlap thresholds.The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$. \
 *[1] - 4.2 Evaluation methodology section
@@ -29,8 +30,8 @@ The success S is measured as the IoU, by testing whether $S$ is larger than a ce
 
 $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$ 
 
-*[2] - 3.4 Evaluation section
-
+*[2] - 3.4 Evaluation section\
+[ref. code](https://github.com/SilvioGiancola/TrackingNet-devkit)
 ## Long-term tracking measures
 Tracking measures for long-term trackers depend on being a target in the scene and prediction confidence to be higher than a classification threshold for each frame 
 
