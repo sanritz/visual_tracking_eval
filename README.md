@@ -22,7 +22,7 @@ where $\parallel \cdot \parallel$ is Euclidean distance
 ## Pnorm
 Normalize the precision over the ground truth bounding box.
 
-$$ P_{norm} = \| W \left( C^{tr} - C^{gt} \right) \|_2$$
+$$P_{norm} = \| W \left( C^{tr} - C^{gt} \right) \|_2$$
 
 $$ W = diag \left( BB_x^{gt}, BB_y^{gt}\right) = \begin{pmatrix} BB_x^{gt} & 0 \\ 0 & BB_y^{gt} \end{pmatrix}$$
 
