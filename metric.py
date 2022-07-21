@@ -22,6 +22,7 @@ def rect_iou(rect1, rect2):
     return ious
 
 def _intersection(rect1, rect2):
+    """Rectangle intersection"""
     assert rect1.shape == rect2.shape
     x1 = np.maximum(rect1[..., 0], rect2[..., 0])
     y1 = np.maximum(rect1[..., 1], rect2[..., 1])
@@ -36,8 +37,8 @@ def _intersection(rect1, rect2):
     return np.stack([x1, y1, w, h]).T
 
 def evaluate(ious):
-    ao = np.mean(ious) * 100        # area overlap
-    sr_05 = np.mean(ious > 0.5) * 100  # success rate when iou > 0.5
+    ao = np.mean(ious) * 100            # area overlap
+    sr_05 = np.mean(ious > 0.5) * 100   # success rate when iou > 0.5
     sr_075 = np.mean(ious > 0.75) * 100 # success rate when iou > 0.75 
     return ao, sr_05, sr_075
 
@@ -58,7 +59,7 @@ def calc_curves(ious, center_errors, norm_center_errors):
     center_errors = np.asarray(center_errors, float)[:, np.newaxis]
     norm_center_errors = np.asarray(norm_center_errors, float)[:, np.newaxis]
 
-    n = 113 # number of frames
+    n = 21
     thr_iou = np.linspace(0, 1, n)[np.newaxis, :]
     thr_ce = np.arange(0, 51)[np.newaxis, :]
     thr_nce = np.linspace(0, 0.5, 51)[np.newaxis, :]
