@@ -15,7 +15,7 @@ Stand for area under curve, which is the average of the success rates correspond
 ## P
 P is stand for precision score. Usually measured as the distance in pixels between the centers $C^{gt}$ and $C^{tr}$ of the ground truth and the tracker bounding box, respectively.
 
-$$ P =\left\| C^{tr} - C^{gt} \right\|_2 = \left\| \begin{pmatrix} C^{tr}_x \\ C^{tr}_y \end{pmatrix} - \begin{pmatrix} C^{gt}_x \\ C^{gt}_y \end{pmatrix} \right\|_2 = \left\| \begin{pmatrix} C^{tr}_x - C^{gt}_x \\ C^{tr}_y - C^{gt}_y \end{pmatrix} \right\|_2 $$
+$$ P =\big\| C^{tr} - C^{gt} \big\|_2 = \left\| \begin{pmatrix} C^{tr}_x \\ C^{tr}_y \end{pmatrix} - \begin{pmatrix} C^{gt}_x \\ C^{gt}_y \end{pmatrix} \right\|_2 = \left\| \begin{pmatrix} C^{tr}_x - C^{gt}_x \\ C^{tr}_y - C^{gt}_y \end{pmatrix} \right\|_2 $$
 
 where $\left\| \cdot \right\|$ is Euclidean distance
 
