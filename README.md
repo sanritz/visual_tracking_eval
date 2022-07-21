@@ -24,7 +24,8 @@ C^{gt}_y
 C^{tr}_y - C^{gt}_y 
 \end{pmatrix} \right\| _2 $$
 
-where $\| \cdot \|_2$ is Euclidean distance
+where $\left\| \cdot \\ 
+\right\|_2$ is Euclidean distance
 
 ## Pnorm
 Normalize the precision over the ground truth bounding box.
