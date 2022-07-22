@@ -31,8 +31,8 @@ Normalize the precision over the ground truth bounding box.
 
 $$P_{norm} = \Vert W \left( C^{tr} - C^{gt} \right) \Vert_2$$
 
-$$ W = diag \left( BB_x^{gt}, BB_y^{gt}\right) = \begin{pmatrix} BB_x^{gt} & 0 \\ 
-0 & BB_y^{gt} 
+$$ W_i = diag \left( BB_{x,i}^{gt}, BB_{y,i}^{gt}\right) = \begin{pmatrix} BB_{x,i}^{gt} & 0 \\ 
+0 & BB_{y,i}^{gt} 
 \end{pmatrix}$$
 
 then,
