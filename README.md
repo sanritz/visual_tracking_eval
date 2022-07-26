@@ -55,8 +55,6 @@ $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$
 # Execute
 ```
 # This is an example for GOT-10k, TrackingNet, and LaSOT dataset
-python -m venv venv
-source venv/bin/activate
 pip install numpy pandas opencv-python tqdm
 python metric.py
 ```
