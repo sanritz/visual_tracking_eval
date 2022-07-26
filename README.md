@@ -50,7 +50,7 @@ The success S is measured as the IoU, by testing whether $S$ is larger than a ce
 $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$ 
 
 *[2] - 3.4 Evaluation section\
-[https://github.com/SilvioGiancola/TrackingNet-devkit/blob/master/metrics.py#L113](https://github.com/SilvioGiancola/TrackingNet-devkit/blob/master/metrics.py#L113)
+[https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/utils/metrics.py#L22](https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/utils/metrics.py#L22)
 
 # Execute
 ```
