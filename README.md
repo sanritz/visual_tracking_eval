@@ -8,7 +8,7 @@ $$ AO = 100 \times \frac {1} {N} \sum_{i=1}^N \mathrm{IoU} \left( S_{1,i}, S_{2,
 
 $$ \mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) = \frac {| S_{1,i} \cap S_{2,i} |} {| S_{1,i} \cup S_{2,i} |} $$
 
-where $N$ is the number of frames, $S_{1,i}$ represents the area of the predicted object of frame $i$, $S_{2,i}$ represents the area of the ground truth of frame $i$, and $\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right)$ is an IoU value of $S_{1,i}$ and $S_{2,i}$.
+where $N$ is the number of frames, $S_{1,i}$ represents the area of the predicted object of frame $i$, $S_{2,i}$ represents the area of the ground truth of frame $i$, and $\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right)$ is the IoU value of $S_{1,i}$ and $S_{2,i}$.
 
 * [6] K-Means vs. Fuzzy C-Means for segmentation of orchid flowers, III. RESULT AND EVALUATION
 [[paper](https://www.researchgate.net/publication/311409493_K-Means_vs_Fuzzy_C-Means_for_Segmentation_of_Orchid_Flowers)]
