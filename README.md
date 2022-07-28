@@ -1,17 +1,22 @@
 # Evaluation Metrics for Visual Tracking
 
 ## Average Overlap (AO)
-Average overlap is percentage of IoU (Intersection over Union)
 
-$$ AO = 100 \times  \frac {1} {N} \sum_{i=1}^N IoU \left( S_{1,i}, S_{2,i} \right) $$
+Average Overlap (AO) is the average of the sequence of IoU (Intersection over Union).
 
-$$  IoU \left( S_{1,i}, S_{2,i} \right) = \frac {| S_{1,i} \cap S_{2,i} |} {| S_{1,i} \cup S_{2,i} |} $$
+$$ AO = 100 \times \frac {1} {N} \sum_{i=1}^N \mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) $$
 
-where $S_{1,i}$ represents the area of predict object and $S_{2,i}$ represents the area of ground truth object. $N$ is number of frame, $i$ frame number, and $IoU \left( S_{1,i}, S_{2,i} \right)$ is IoU score of $S_{1,i}$ and $S_{2,i}$  \
-*[6] - 3. Result and evaluation section\
-[https://github.com/got-10k/toolkit/blob/master/got10k/experiments/got10k.py#L198](https://github.com/got-10k/toolkit/blob/master/got10k/experiments/got10k.py#L198)
+$$ \mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) = \frac {| S_{1,i} \cap S_{2,i} |} {| S_{1,i} \cup S_{2,i} |} $$
+
+where $N$ is the number of frames, $S_{1,i}$ represents the area of the predicted object of frame $i$, $S_{2,i}$ represents the area of the ground truth of frame $i$, and $\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right)$ is an IoU value of $S_{1,i}$ and $S_{2,i}$.
+
+* [6] K-Means vs. Fuzzy C-Means for segmentation of orchid flowers, III. RESULT AND EVALUATION
+[[paper](https://www.researchgate.net/publication/311409493_K-Means_vs_Fuzzy_C-Means_for_Segmentation_of_Orchid_Flowers)]
+* https://github.com/got-10k/toolkit/blob/v0.1.3/got10k/experiments/got10k.py#L265
+
 ## Area Under Curve (AUC)
-Stand for area under curve, which is the average of the success rates corresponding to the sampled overlap thresholds.The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$. \
+
+Area Under Curve (AUC) is the average of the success rates corresponding to the sampled overlap thresholds.The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$. \
 *[1] - 4.2 Evaluation methodology section\
 [https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/experiments/lasot.py#L144](https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/experiments/lasot.py#L144)
 
