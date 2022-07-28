@@ -3,9 +3,10 @@
 ## Average Overlap (AO)
 Average overlap is percentage of IoU (Intersection over Union)
 
-$$ AO = 100 \times  \frac {| S_1 \cap S_2 |} {| S_1 \cup S_2 |} $$
+$$ AO = 100 \times  \frac {1} {N} \sum_{i=1}^N IoU \left( S_{1,i}, S_{2,i} \right) $$
+$$  IoU \left( S_{1,i}, S_{2,i} \right) = \frac {| S_{1,i} \cap S_{2,i} |} {| S_{1,i} \cup S_{2,i} |} $$
 
-where $S_1$ represents the area of predict object and $S_2$ represents the area of ground truth object \
+where $S_{1,i}$ represents the area of predict object and $S_{2,i}$ represents the area of ground truth object. $N$ is number of frame, $i$ frame number, and $IoU \left( S_{1,i}, S_{2,i} \right)$ is IoU score of $S_{1,i}$ and $S_{2,i}$  \
 *[6] - 3. Result and evaluation section\
 [https://github.com/got-10k/toolkit/blob/master/got10k/experiments/got10k.py#L198](https://github.com/got-10k/toolkit/blob/master/got10k/experiments/got10k.py#L198)
 ## Area Under Curve (AUC)
