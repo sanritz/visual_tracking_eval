@@ -4,6 +4,7 @@
 Average overlap is percentage of IoU (Intersection over Union)
 
 $$ AO = 100 \times  \frac {1} {N} \sum_{i=1}^N IoU \left( S_{1,i}, S_{2,i} \right) $$
+
 $$  IoU \left( S_{1,i}, S_{2,i} \right) = \frac {| S_{1,i} \cap S_{2,i} |} {| S_{1,i} \cup S_{2,i} |} $$
 
 where $S_{1,i}$ represents the area of predict object and $S_{2,i}$ represents the area of ground truth object. $N$ is number of frame, $i$ frame number, and $IoU \left( S_{1,i}, S_{2,i} \right)$ is IoU score of $S_{1,i}$ and $S_{2,i}$  \
