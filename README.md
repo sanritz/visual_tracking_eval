@@ -76,14 +76,24 @@ NPrecision score (P_norm): 21.90 %
 ```
 
 ## Reference
-[1]: GOT-10k: A large high-diversity benchmark for generic object tracking in the wild [[paper](https://arxiv.org/pdf/1810.11981.pdf)] \
-[2]: TrackingNet: A large-scale dataset and benchmark for object tracking in the wild [[paper](https://arxiv.org/pdf/1803.10794.pdf)] \
-[3]: LaSOT: A high-quality benchmark for large-scale single object tracking [[paper](https://arxiv.org/pdf/1809.07845v2.pdf)] \
-[4]: Object tracking benchmark [[paper](https://faculty.ucmerced.edu/mhyang/papers/pami15_tracking_benchmark.pdf)] \
-[5]: Visual object tracking performance measures revisited [[paper](https://arxiv.org/pdf/1502.05803.pdf)] \
-[6]: K-Means vs. Fuzzy C-Means for segmentation of orchid flowers [[paper](https://www.researchgate.net/publication/311409493_K-Means_vs_Fuzzy_C-Means_for_Segmentation_of_Orchid_Flowers)] \
-[7]: Robust visual tracking with reliable object information and Kalman filter [[paper](https://www.researchgate.net/publication/348859011_Robust_Visual_Tracking_with_Reliable_Object_Information_and_Kalman_Filter)] \
-[8]: Online Object Tracking: A Benchmark [[paper](https://faculty.ucmerced.edu/mhyang/papers/cvpr13_benchmark.pdf)] \
-[9]: Intersection over Union (IoU) for object detection [[link](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)] \
-[10]: Understanding AUC-ROC Curve [[link](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)] \
-[11]: Visual Object Tracking on GOT-10k dataset [[link](https://paperswithcode.com/sota/visual-object-tracking-on-got-10k)] 
+
+* [1] GOT-10k: A large high-diversity benchmark for generic object tracking in the wild
+[[paper](https://arxiv.org/pdf/1810.11981.pdf)]
+* [2] TrackingNet: A large-scale dataset and benchmark for object tracking in the wild
+[[paper](https://arxiv.org/pdf/1803.10794.pdf)]
+* [3] LaSOT: A high-quality benchmark for large-scale single object tracking
+[[paper](https://arxiv.org/pdf/1809.07845v2.pdf)]
+* [4] Object tracking benchmark
+[[paper](https://faculty.ucmerced.edu/mhyang/papers/pami15_tracking_benchmark.pdf)]
+* [5] Visual object tracking performance measures revisited
+[[paper](https://arxiv.org/pdf/1502.05803.pdf)]
+* [6] K-Means vs. Fuzzy C-Means for segmentation of orchid flowers
+[[paper](https://www.researchgate.net/publication/311409493_K-Means_vs_Fuzzy_C-Means_for_Segmentation_of_Orchid_Flowers)]
+* [7] Robust visual tracking with reliable object information and Kalman filter
+[[paper](https://www.researchgate.net/publication/348859011_Robust_Visual_Tracking_with_Reliable_Object_Information_and_Kalman_Filter)]
+* [8] Online Object Tracking: A Benchmark
+[[paper](https://faculty.ucmerced.edu/mhyang/papers/cvpr13_benchmark.pdf)]
+* [9] Intersection over Union (IoU) for object detection
+[[link](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)]
+* [10] Understanding AUC-ROC Curve
+[[link](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)]
