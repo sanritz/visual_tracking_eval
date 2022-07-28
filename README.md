@@ -10,7 +10,8 @@ where $S_1$ represents the area of predict object and $S_2$ represents the area 
 [https://github.com/got-10k/toolkit/blob/master/got10k/experiments/got10k.py#L198](https://github.com/got-10k/toolkit/blob/master/got10k/experiments/got10k.py#L198)
 ## Area Under Curve (AUC)
 Stand for area under curve, which is the average of the success rates corresponding to the sampled overlap thresholds.The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$. \
-*[1] - 4.2 Evaluation methodology section
+*[1] - 4.2 Evaluation methodology section\
+[https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/experiments/lasot.py#L144](https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/experiments/lasot.py#L144)
 
 ## Precision (P)
 P is stand for precision score. Usually measured as the distance in pixels between the centers $C^{gt}$ and $C^{tr}$ of the ground truth and the tracker bounding box, respectively.
@@ -24,7 +25,8 @@ C^{gt}_y
 C^{tr}_y - C^{gt}_y 
 \end{pmatrix} \right\Vert _2 $$
 
-where $\Vert \cdot \Vert _2$ is Euclidean distance
+where $\Vert \cdot \Vert _2$ is Euclidean distance\
+[https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/utils/metrics.py#L7](https://github.com/got-10k/toolkit/blob/956e7286fdf209cbb125adac9a46376bd8297ffb/got10k/utils/metrics.py#L7)
 
 ## Normalize Precision (Pnorm)
 Normalize the precision over the ground truth bounding box.
@@ -57,6 +59,18 @@ $$ S = \frac {| BB^{tr} \cap BB^{gt} |} {| BB^{tr} \cup BB^{gt}|} $$
 # This is an example for GOT-10k, TrackingNet, and LaSOT dataset
 pip install numpy pandas opencv-python tqdm
 python metric.py
+```
+
+# Result
+```
+--- Evaluate for GOT-10k ---
+Average Overlap (AO): 28.40 %
+Success 0.5 (SR0.5): 22.12 %
+Success 0.75 (SR0.75): 16.81 %
+--- Evaluate for TrackingNet & LaSOT ---
+Success score (AUC): 28.78 %
+Precision score (P): 30.57 %
+NPrecision score (P_norm): 21.90 %
 ```
 
 ## Reference
