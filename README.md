@@ -20,7 +20,7 @@ Area Under Curve (AUC) is the average of the success rates corresponding to the 
 
 $$ SR_{0.5} = \frac {1} {N} \sum_{i=1}^N 1\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > 0.5 \right) $$ 
 
-$$ AUC = \int _0^1 SR_t dt = \int _0^1 \frac {1} {N} \sum_{i=1}^N 1\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > t \right)dt$$
+$$ AUC = \int _{0}^1 SR_t dt = \int _{0}^1 \frac {1} {N} \sum_{i=1}^N 1\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > t \right)dt$$
 
 * GOT-10k: A large high-diversity benchmark for generic object tracking in the wild, 4.2 Evaluation methodology section
 [[paper](https://arxiv.org/pdf/1810.11981.pdf)]
