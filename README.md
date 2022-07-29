@@ -10,17 +10,15 @@ $$ \mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) = \frac {| S_{1,i} \cap S_{2,i} 
 
 where $N$ is the number of frames, $S_{1,i}$ represents the area of the predicted object of frame $i$, $S_{2,i}$ represents the area of the ground truth of frame $i$, and $\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right)$ is the IoU value of $S_{1,i}$ and $S_{2,i}$.
 
-The success ratio $SR$ is measured as the IoU, by testing whether $SR$ is larger than a certain threshold $t$ (e.g., $t=0.5$).
-
-$$ SR_{0.5} = \frac {1} {N} \sum_{i=1}^N 1\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > 0.5 \right) $$ 
-
 * K-Means vs. Fuzzy C-Means for segmentation of orchid flowers, III. RESULT AND EVALUATION
 [[paper](https://www.researchgate.net/publication/311409493_K-Means_vs_Fuzzy_C-Means_for_Segmentation_of_Orchid_Flowers)]
 * https://github.com/got-10k/toolkit/blob/v0.1.3/got10k/experiments/got10k.py#L265
 
 ## Area Under Curve (AUC)
 
-Area Under Curve (AUC) is the average of the success rates corresponding to the sampled overlap thresholds.The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$.
+Area Under Curve (AUC) is the average of the success rates corresponding to the sampled overlap thresholds.The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$. The success rate $SR$ is measured as the IoU, by testing whether $SR$ is larger than a certain threshold $t$ (e.g., $t=0.5$).
+
+$$ SR_{0.5} = \frac {1} {N} \sum_{i=1}^N 1\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > 0.5 \right) $$ 
 
 * GOT-10k: A large high-diversity benchmark for generic object tracking in the wild, 4.2 Evaluation methodology section
 [[paper](https://arxiv.org/pdf/1810.11981.pdf)]
