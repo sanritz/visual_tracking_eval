@@ -82,7 +82,7 @@ Success 0.5 (SR0.5): 22.12 %
 Success 0.75 (SR0.75): 16.81 %
 --- Evaluate for TrackingNet & LaSOT ---
 Success score (AUC): 28.78 %
-Precision score (P): 30.57 %
+Precision score (P): 23.89 %
 NPrecision score (P_norm): 21.90 %
 ```
 
