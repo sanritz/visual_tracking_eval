@@ -99,7 +99,7 @@ def main():
     succ_curve, prec_curve, norm_prec_curve = calc_curves(seq_ious, cen_err, ncen_err)
     print("--- Evaluate for TrackingNet & LaSOT ---")
     succ_score = np.mean(succ_curve) * 100
-    prec_score = np.mean(prec_curve) * 100
+    prec_score = prec_curve[20] * 100
     norm_prec_score = np.mean(norm_prec_curve) * 100
     print("Success score (AUC): {:.2f} %".format(succ_score))
     print("Precision score (P): {:.2f} %".format(prec_score))
