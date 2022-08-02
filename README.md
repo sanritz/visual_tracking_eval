@@ -29,7 +29,7 @@ $$ AUC = \int_{0}^1 SR_t dt = \int_{0}^1 \frac {1} {N} \sum_{i=1}^N 1\left(\math
 ## Precision (P)
 P is stand for precision score. Usually measured as the distance in pixels between the centers $C^{gt}$ and $C^{tr}$ of the ground truth and the tracker bounding box, respectively. Then, The trackers are ranked using this metric with a conventional threshold of 20 pixels.
 
-$$ center \, error = \left\Vert C^{tr} - C^{gt} \right\Vert _2 = \left\Vert \begin{pmatrix} C^{tr}_x \\ 
+$$ center \ error = \left\Vert C^{tr} - C^{gt} \right\Vert _2 = \left\Vert \begin{pmatrix} C^{tr}_x \\ 
 C^{tr}_y 
 \end{pmatrix} - 
 \begin{pmatrix} C^{gt}_x \\ 
