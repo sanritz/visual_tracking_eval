@@ -32,7 +32,7 @@ P stands for precision score. Usually measured as the distance in pixels between
 $$ P = \frac {1} {N} \sum_{i=1}^N 1\left(\left\Vert C^{tr}_i - C^{gt}_i \right\Vert _2 \le 20 \right) $$
 
 $$ \left\Vert C_{i}^{tr} - C_{i}^{gt} \right\Vert _2 = \left\Vert \begin{pmatrix} 
-C_{x,i}^{tr} \\ 
+C _{x,i} ^{tr} \\ 
 C_{y,i}^{tr} 
 \end{pmatrix} - 
 \begin{pmatrix} 
