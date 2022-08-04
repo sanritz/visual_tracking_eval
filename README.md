@@ -60,9 +60,9 @@ $$ P_{norm} = \frac {1} {|\bf{T}|} \sum_{t\in \bf{T}} \frac {1} {N} \sum_{i=1}^N
 
 where,
 
-$$ \boldsymbol{T} = \mathrm{linspace} (0.0, 0.5, 51)$$
+$$ {\bf{T}} = \mathrm{linspace} (0.0, 0.5, 51)$$
 
-$$ \boldsymbol{T} = \lbrace x \in \mathbb{R} | x = 0.1 \times n \land n \in \lbrace a \in \mathbb{N} | 0 \le a \le 50 \rbrace \rbrace$$
+$$ {\bf{T}} = \lbrace x \in \mathbb{R} | x = 0.1 \times n \land n \in \lbrace a \in \mathbb{N} | 0 \le a \le 50 \rbrace \rbrace$$
 
 $$ W_i = \mathrm{diag} \left( BB_{x,i}^{gt}, BB_{y,i}^{gt}\right) = \begin{pmatrix} BB_{x,i}^{gt} & 0 \\ 
 0 & BB_{y,i}^{gt} 
