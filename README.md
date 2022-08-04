@@ -18,14 +18,14 @@ where $N$ is the number of frames, $S_{1,i}$ represents the area of the predicte
 
 Area Under Curve (AUC) is the average of the success rates corresponding to the sampled overlap thresholds. The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$. The success rate $SR$ is measured as the $\mathrm{IoU}$, by testing whether $\mathrm{IoU}$ is larger than a certain threshold $t$ (e.g., $t=0.5$).
 
-$$ SR_{0.5} = \frac {1} {N} \sum_{i=1}^N 1\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > 0.5 \right) $$ 
+$$ SR_{0.5} = \frac {1} {N} \sum_{i=1}^N \bf{1}\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > 0.5 \right) $$ 
 
-$$ AUC = \int_{0}^1 SR_t dt = \int_{0}^1 \frac {1} {N} \sum_{i=1}^N 1\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > t \right)dt$$
+$$ AUC = \int_{0}^1 SR_t dt = \int_{0}^1 \frac {1} {N} \sum_{i=1}^N \bf{1}\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > t \right)dt$$
 
 where,
 
-$$ 1(True) = \text{True condition}$$
-$$ 1(False) = \text{False condition}$$
+$$ \bf{1} (True) = \text{True condition}$$
+$$ \bf{1} (False) = \text{False condition}$$
 
 * GOT-10k: A large high-diversity benchmark for generic object tracking in the wild, 4.2 Evaluation methodology section
 [[paper](https://arxiv.org/pdf/1810.11981.pdf)]
@@ -55,15 +55,15 @@ where $\Vert \cdot \Vert _2$ is Euclidean distance
 ## Normalize Precision (Pnorm)
 $P_{norm}$ normalize the precision over the ground truth bounding box. The trackers are then ranked using the average for normalized precision between 0 and 0.5.
 
-$$ P_{norm} = \frac {1} {|T|} \sum_{t\in T} \frac {1} {N} \sum_{i=1}^N 1\left(\left\Vert W_i^{-1} \left( C^{tr}_i - C^{gt}_i \right\Vert _2 \right) \le t \right) $$
+$$ P_{norm} = \frac {1} {|\bf{T}|} \sum_{t\in \bf{T}} \frac {1} {N} \sum_{i=1}^N \bf{1}\left(\left\Vert W_i^{-1} \left( C^{tr}_i - C^{gt}_i \right\Vert _2 \right) \le t \right) $$
 
 where,
 
-$$ T = linspace(0.0, 0.5, 51)$$
+$$ \bf{T} = \mathrm{linspace}(0.0, 0.5, 51)$$
 
-$$ T = \lbrace x \in \mathbb{R} | x = 0.1 \times n \land n \in \lbrace a \in \mathbb{N} | 0 \le a \le 50 \rbrace \rbrace$$
+$$ \bf{T} = \lbrace x \in \mathbb{R} | x = 0.1 \times n \land n \in \lbrace a \in \mathbb{N} | 0 \le a \le 50 \rbrace \rbrace$$
 
-$$ W_i = diag \left( BB_{x,i}^{gt}, BB_{y,i}^{gt}\right) = \begin{pmatrix} BB_{x,i}^{gt} & 0 \\ 
+$$ W_i = \mathrm{diag} \left( BB_{x,i}^{gt}, BB_{y,i}^{gt}\right) = \begin{pmatrix} BB_{x,i}^{gt} & 0 \\ 
 0 & BB_{y,i}^{gt} 
 \end{pmatrix}$$
 
