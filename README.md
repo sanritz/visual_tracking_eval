@@ -24,9 +24,7 @@ $$ AUC = \int_{0}^1 SR_t dt = \int_{0}^1 \frac {1} {N} \sum_{i=1}^N \boldsymbol{
 
 where,
 
-$$ \boldsymbol{1} (True) = \text{True condition}$$
-
-$$ \boldsymbol{1} (False) = \text{False condition}$$
+$$ \boldsymbol{1} (True) = 1, \boldsymbol{1} (False) = 0$$
 
 * GOT-10k: A large high-diversity benchmark for generic object tracking in the wild, 4.2 Evaluation methodology section
 [[paper](https://arxiv.org/pdf/1810.11981.pdf)]
