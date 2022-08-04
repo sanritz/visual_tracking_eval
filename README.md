@@ -56,7 +56,7 @@ where $\Vert \cdot \Vert _2$ is Euclidean distance
 ## Normalize Precision (Pnorm)
 $P_{norm}$ normalize the precision over the ground truth bounding box. The trackers are then ranked using the average for normalized precision between 0 and 0.5.
 
-$$ P_{norm} = \frac {1} {|\bf{T}|} \sum_{t\in \bf{T}} \frac {1} {N} \sum_{i=1}^N \bf{1}\left(\left\Vert W_i^{-1} \left( C^{tr}_i - C^{gt}_i \right\Vert _2 \right) \le t \right) $$
+$$ P_{norm} = \frac {1} {|\bf{T}|} \sum_{t\in \bf{T}} \frac {1} {N} \sum_{i=1}^N \boldsymbol{1}\left(\left\Vert W_i^{-1} \left( C^{tr}_i - C^{gt}_i \right\Vert _2 \right) \le t \right) $$
 
 where,
 
