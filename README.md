@@ -24,8 +24,9 @@ $$ AUC = \int_{0}^1 SR_t dt = \int_{0}^1 \frac {1} {N} \sum_{i=1}^N \bf{1}\left(
 
 where,
 
-$$ \bf{1} (True) = \text{True condition}$$
-$$ \bf{1} (False) = \text{False condition}$$
+$$ \boldsymbol{1} (True) = \text{True condition}$$
+
+$$ \boldsymbol{1} (False) = \text{False condition}$$
 
 * GOT-10k: A large high-diversity benchmark for generic object tracking in the wild, 4.2 Evaluation methodology section
 [[paper](https://arxiv.org/pdf/1810.11981.pdf)]
@@ -59,9 +60,9 @@ $$ P_{norm} = \frac {1} {|\bf{T}|} \sum_{t\in \bf{T}} \frac {1} {N} \sum_{i=1}^N
 
 where,
 
-$$ \bf{T} = \mathrm{linspace}(0.0, 0.5, 51)$$
+$$ \boldsymbol{T} = \mathrm{linspace} (0.0, 0.5, 51)$$
 
-$$ \bf{T} = \lbrace x \in \mathbb{R} | x = 0.1 \times n \land n \in \lbrace a \in \mathbb{N} | 0 \le a \le 50 \rbrace \rbrace$$
+$$ \boldsymbol{T} = \lbrace x \in \mathbb{R} | x = 0.1 \times n \land n \in \lbrace a \in \mathbb{N} | 0 \le a \le 50 \rbrace \rbrace$$
 
 $$ W_i = \mathrm{diag} \left( BB_{x,i}^{gt}, BB_{y,i}^{gt}\right) = \begin{pmatrix} BB_{x,i}^{gt} & 0 \\ 
 0 & BB_{y,i}^{gt} 
