@@ -18,9 +18,9 @@ where $N$ is the number of frames, $S_{1,i}$ represents the area of the predicte
 
 Area Under Curve (AUC) is the average of the success rates corresponding to the sampled overlap thresholds. The AO is recently proved to be equivalent to the AUC. AUC value is usually used to ranking the trackers in success plot $(S)$. The success rate $SR$ is measured as the $\mathrm{IoU}$, by testing whether $\mathrm{IoU}$ is larger than a certain threshold $t$ (e.g., $t=0.5$).
 
-$$ SR_{0.5} = \frac {1} {N} \sum_{i=1}^N \bf{1}\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > 0.5 \right) $$ 
+$$ SR_{0.5} = \frac {1} {N} \sum_{i=1}^N \boldsymbol{1}\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > 0.5 \right) $$ 
 
-$$ AUC = \int_{0}^1 SR_t dt = \int_{0}^1 \frac {1} {N} \sum_{i=1}^N \bf{1}\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > t \right)dt$$
+$$ AUC = \int_{0}^1 SR_t dt = \int_{0}^1 \frac {1} {N} \sum_{i=1}^N \boldsymbol{1}\left(\mathrm{IoU} \left( S_{1,i}, S_{2,i} \right) > t \right)dt$$
 
 where,
 
@@ -35,7 +35,7 @@ $$ \boldsymbol{1} (False) = \text{False condition}$$
 ## Precision (P)
 P stands for precision score. Usually measured as the distance in pixels between the centers $C^{gt}$ and $C^{tr}$ of the ground truth and the tracker bounding box, respectively. Then, The trackers are ranked using this metric with a conventional threshold of 20 pixels.
 
-$$ P = \frac {1} {N} \sum_{i=1}^N 1\left(\left\Vert C^{tr}_i - C^{gt}_i \right\Vert _2 \le 20 \right) $$
+$$ P = \frac {1} {N} \sum_{i=1}^N \boldsymbol{1}\left(\left\Vert C^{tr}_i - C^{gt}_i \right\Vert _2 \le 20 \right) $$
 
 $$ \left\Vert C_{i}^{tr} - C_{i}^{gt} \right\Vert_2 = \left\Vert 
 \begin{pmatrix}
